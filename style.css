@@ -138,3 +138,62 @@ main section.important .right p span {
     color: #0a84ff;
     text-shadow: 4px 4px 5px #0a84ff56;
 }
+
+/* FEEDBACK */
+
+main section.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+main section.feedback h3 {
+    color: #0a84ff;
+    font-family: "Share Tech", sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+main section.feedback .buttons {
+    display: flex;
+    gap: 25px;
+}
+
+main section.feedback button {
+    border: none;
+    padding: 15px 40px;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+main section.feedback .btn-yes {
+    background: linear-gradient(135deg, #0a84ff, #0066cc);
+    box-shadow: 0 0 20px rgba(10, 132, 255, 0.35);
+}
+
+main section.feedback .btn-yes:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 30px rgba(10, 132, 255, 0.6);
+}
+
+main section.feedback .btn-no {
+    background: linear-gradient(135deg, #444, #222);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+main section.feedback .btn-no:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+main section.feedback button:active {
+    transform: scale(0.95);
+}
